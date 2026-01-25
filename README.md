@@ -9,32 +9,6 @@ Bu repo, kişisel portfolyo sitemin temel yapısını içerir. Şu anda sadece i
 - Backend: PHP, SQL, API geliştirme
 - Tasarım: UI/UX, Responsive Design
 
-## 📁 Projeler (Güncellenecek)
-
-Aşağıda ileride eklenecek projeler için yer ayrılmıştır:
-
-- **Proje Adı #1**  
-  Açıklama:  
-  Teknolojiler:  
-
-- **Proje Adı #2**  
-  Açıklama:  
-  Teknolojiler:  
-
-- **Proje Adı #3**  
-  Açıklama:  
-  Teknolojiler:  
-
-## 💼 Deneyim (Güncellenecek)
-
-- **Şirket / Rol**  
-  Tarih:  
-  Açıklama:  
-
-- **Eğitim**  
-  Üniversite / Bölüm  
-  Tarih:  
-
 ## 📬 İletişim
 
 Benimle iletişime geçmek için:
@@ -44,6 +18,4 @@ Benimle iletişime geçmek için:
 - GitHub: [github.com/umutcankarahisar](https://github.com/umutcankarahisar)
 
 ---
-
-
 > Bu dosya sürekli güncellenecektir. Yeni projeler ve içerikler eklendikçe burası da gelişecektir.
