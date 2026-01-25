@@ -13,9 +13,10 @@ Bu repo, kişisel portfolyo sitemin temel yapısını içerir. Şu anda sadece i
 
 Benimle iletişime geçmek için:
 
-- E-posta: [email@example.com]
-- LinkedIn: [linkedin.com/in/umutcankarahisar](https://www.linkedin.com/in/umutcankarahisar)
-- GitHub: [github.com/umutcankarahisar](https://github.com/umutcankarahisar)
+- E-posta: [karahisaru@icloud.com]
+- LinkedIn: [linkedin.com/in/umutcankarahisar](https://www.linkedin.com/in/umut-can-karahisar/)
+- GitHub: [github.com/umutcankarahisar](https://github.com/Sermestsel)
 
 ---
 > Bu dosya sürekli güncellenecektir. Yeni projeler ve içerikler eklendikçe burası da gelişecektir.
+
