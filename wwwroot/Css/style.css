@@ -1,10 +1,10 @@
-   * {
+*{
             box-sizing: border-box;
+             font-family: "Space Grotesk";
         }
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
             min-height: 100vh;
             background:
                 radial-gradient(1100px 600px at 12% 12%, rgba(191, 122, 11, 0.35), transparent 60%),
@@ -21,6 +21,7 @@
             width: min(1060px, 100%);
             margin: 0 auto;
             padding: 22px;
+            
         }
 
         header {
@@ -78,6 +79,7 @@
             gap: 18px;
             margin-top: 14px;
             align-items: stretch;
+            
         }
 
         .card {
@@ -97,7 +99,6 @@
         }
 
         .kicker {
-            display: inline-flex;
             gap: 8px;
             align-items: center;
             padding: 9px;
@@ -106,6 +107,7 @@
             background: rgba(255, 255, 255, .65);
             font-size: 12.5px;
             font-weight: 800;
+            text-align: center;
         }
 
         h1 {
@@ -115,36 +117,48 @@
         }
 
         .btn {
-            display: inline-block;
-            padding: 10px 16px;
-            border-radius: 12px;
-            border: 1px solid rgba(15, 23, 42, .12);
-            background: rgba(255, 255, 255, .65);
-            box-shadow: 0 8px 16px rgba(2, 6, 63, .08);
-            font-weight: 700;
-            font-size: 13px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform .2s, box-shadow .2s ease;
+            background-color: #87cade;
+  font-family: monospace;
+  border: 3px solid black;
+  box-shadow: 2px 2px black;
+  font-weight: bolder;
+  padding: 2px 5px;
+
         }
 
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 16px 40px rgba(2, 6, 23, .12);
+                background-color: #f3f3f3;
         }
+        .button:active {
+    box-shadow: 0px 0px black;
+    transform: translate(5px, 5px);
+}
 
         .chip {
             font-size: 12.5px;
             font-weight: 700;
             padding: 8px 10px;
-            border-radius: 999px;
+            border-radius: 10px;
             border: 1px solid rgba(15, 23, 42, .12);
+            display: grid;
+            padding-left: 10px;
+            gap: 6px;
+            
+            background-color: #87cade;
+  font-family: monospace;
+  border: 3px solid black;
+  box-shadow: 2px 2px black;
+  font-weight: bolder;
+  padding: 2px 5px;
         }
 
         .chips {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
+            
         }
 
         .hero .right {
@@ -208,6 +222,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 12px;
+            
         }
 
         .proj {
@@ -247,12 +262,12 @@
         }
 
         .tag {
-            font-size: 12px;
-            font-weight: 700;
-            padding: 6px 8px;
-            border-radius: 999px;
-            border: 1px solid rgba(15, 23, 42, .12);
-            background: rgba(255, 255, 255, .65);
+            background-color: #87cade;
+  font-family: monospace;
+  border: 3px solid black;
+  box-shadow: 2px 2px black;
+  font-weight: bolder;
+  padding: 2px 5px;
         }
 
         .section-title {
