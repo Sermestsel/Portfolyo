@@ -1,3 +1,10 @@
+:root {
+  --html: #f2994a;
+  --css:  #2d9cdb;
+  --js:   #f2c94c;
+  --php:  #9b51e0;
+}
+
 *{
             box-sizing: border-box;
              font-family: "Space Grotesk";
@@ -7,10 +14,11 @@
             margin: 0;
             min-height: 100vh;
             background:
-                radial-gradient(1100px 600px at 12% 12%, rgba(191, 122, 11, 0.35), transparent 60%),
-                radial-gradient(900px 520px at 88% 18%, rgba(30, 178, 211, 0.35), transparent 55%),
-                linear-gradient(180deg, #f8fafc, #eef2ff);
-        }
+                radial-gradient(900px 500px at 15% 15%, rgba(242, 201, 76, 0.25), transparent 60%),
+    radial-gradient(700px 420px at 85% 20%, rgba(47, 128, 237, 0.20), transparent 55%),
+    linear-gradient(180deg, #f4f1ea, #e6dccb);
+    border: 3px solid #000;
+}
 
         a {
             text-decoration: none;
@@ -117,20 +125,25 @@
         }
 
         .btn {
-            background-color: #87cade;
-  font-family: monospace;
-  border: 3px solid black;
-  box-shadow: 2px 2px black;
-  font-weight: bolder;
-  padding: 2px 5px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  padding: 6px 12px;
+  border: 3px solid #000;
+  background: #e6dccb;
+  box-shadow: 3px 3px 0 #000;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
 
-        }
+.btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+}
+.btn:nth-of-type(1) { background: var(--css); transform: rotate(-2deg); }
+.btn:nth-of-type(2) { background: var(--php); }
+.btn:nth-of-type(3) { background: var(--html); }
+.btn:nth-of-type(4) { background: var(--js); }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 16px 40px rgba(2, 6, 23, .12);
-                background-color: #f3f3f3;
-        }
         .button:active {
     box-shadow: 0px 0px black;
     transform: translate(5px, 5px);
@@ -307,3 +320,31 @@
             display: grid;
             gap: 8px;
         }
+
+        .retro-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 3px solid #000;
+  background: #f4f1ea;
+  box-shadow: 3px 3px 0 #000;
+  cursor: default;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.tag:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+}
+
+/* RENKLER */
+.tag.html { background: #f2994a; }
+.tag.css  { background: #2d9cdb; }
+.tag.js   { background: #f2c94c; }
+.tag.php  { background: #9b51e0; }
