@@ -1,350 +1,393 @@
-:root {
-  --html: #f2994a;
-  --css:  #2d9cdb;
-  --js:   #f2c94c;
-  --php:  #9b51e0;
+* {
+    box-sizing: border-box;
+    font-family: "Space Grotesk";
 }
 
-*{
-            box-sizing: border-box;
-             font-family: "Space Grotesk";
-        }
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #87cade;
+                 font-family: "Space Grotesk";
 
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background:
-                radial-gradient(900px 500px at 15% 15%, rgba(242, 201, 76, 0.25), transparent 60%),
-    radial-gradient(700px 420px at 85% 20%, rgba(47, 128, 237, 0.20), transparent 55%),
-    linear-gradient(180deg, #f4f1ea, #e6dccb);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: #87cade;
+    font-family: "Space Grotesk";
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
+
+.wrap {
+    width: min(1060px, 100%);
+    margin: 0 auto;
+    padding: 22px;
+}
+
+header {
+    top: 0;
+    z-index: 10;
+    padding: 14px 0;
+    font-family: "Space Grotesk";
+    font-weight: bolder;
+    padding: 2px 5px;
+    
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    border-radius: 18px;
+    padding: 10px 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    letter-spacing: .2px;
+}
+
+.logo {
+    width: 45px;
+    height: 40px;
+    border-radius: 12px;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
+
+
+nav a {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 10px;
+    border-radius: 12px;
+    opacity: 0.85;
+}
+
+nav a:hover {
+    background: rgba(141, 182, 202, 0.45);
+    box-shadow: 0 8px 16px rgba(2, 6, 63, .08);
+    opacity: 1;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 18px;
+    margin-top: 14px;
+    align-items: stretch;
+}
+
+.card {
+    background: rgba(255, 255, 255, .75);
+    border: 1px solid rgba(15, 23, 42, .12);
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 18px 50px rgba(2, 6, 63, .08);
+    padding: 24px;
+    gap: 18px;
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
+
+.hero .left {
+    padding: 22px;
+    display: grid;
+    gap: 12px;
+}
+
+.kicker {
+    background-color: #87cade;
+    font-family: "Space Grotesk";
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    padding: 6px 12px;
     border: 3px solid #000;
-}
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .wrap {
-            width: min(1060px, 100%);
-            margin: 0 auto;
-            padding: 22px;
-            
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            padding: 14px 0;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 14px;
-            border: 1px solid rgba(15, 23, 42, .12);
-            background: rgba(255, 255, 255, .65);
-            border-radius: 18px;
-            padding: 10px 12px;
-            box-shadow: 0 18px 50px rgba(2, 6, 63, .08);
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 900;
-            letter-spacing: .2px;
-        }
-
-        .logo {
-            width: 34px;
-            height: 34px;
-            border-radius: 12px;
-            background: conic-gradient(from 180deg at 50% 50%, #f59e0b, #ef4444, #8b5cf6, #3b82f6, #10b981, #f59e0b);
-        }
-
-        nav a {
-            font-size: 13px;
-            font-weight: 700;
-            padding: 9px 10px;
-            border-radius: 12px;
-            opacity: 0.85;
-        }
-
-        nav a:hover {
-            background: rgba(141, 182, 202, 0.45);
-            box-shadow: 0 8px 16px rgba(2, 6, 63, .08);
-            opacity: 1;
-        }
-
-        .hero {
-            display: grid;
-            grid-template-columns: 1.1fr .9fr;
-            gap: 18px;
-            margin-top: 14px;
-            align-items: stretch;
-            
-        }
-
-        .card {
-            background: rgba(255, 255, 255, .75);
-            border: 1px solid rgba(15, 23, 42, .12);
-            border-radius: 18px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 18px 50px rgba(2, 6, 63, .08);
-            padding: 24px;
-            gap: 18px;
-        }
-
-        .hero .left {
-            padding: 22px;
-            display: grid;
-            gap: 12px;
-        }
-
-        .kicker {
-            gap: 8px;
-            align-items: center;
-            padding: 9px;
-            border-radius: 999px;
-            border: 1px solid rgba(15, 23, 42, .12);
-            background: rgba(255, 255, 255, .65);
-            font-size: 12.5px;
-            font-weight: 800;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            line-height: 1.2;
-        }
-
-        .btn {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 13px;
-  padding: 6px 12px;
-  border: 3px solid #000;
-  background: #e6dccb;
-  box-shadow: 3px 3px 0 #000;
-  cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.1s;
+    background: #e6dccb;
+    box-shadow: 3px 3px 0 #000;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .btn:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0 #000;
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #000;
 }
-.btn:nth-of-type(1) { background: var(--css); transform: rotate(-2deg); }
-.btn:nth-of-type(2) { background: var(--php); }
-.btn:nth-of-type(3) { background: var(--html); }
-.btn:nth-of-type(4) { background: var(--js); }
 
-        .button:active {
+.btn:nth-of-type(1) {
+    background: var(--css);
+    transform: rotate(-2deg);
+}
+
+.btn:nth-of-type(2) {
+    background: var(--php);
+}
+
+.btn:nth-of-type(3) {
+    background: var(--html);
+}
+
+.btn:nth-of-type(4) {
+    background: var(--js);
+}
+
+.button:active {
     box-shadow: 0px 0px black;
     transform: translate(5px, 5px);
 }
 
-        .chip {
-            font-size: 12.5px;
-            font-weight: 700;
-            padding: 8px 10px;
-            border-radius: 10px;
-            border: 1px solid rgba(15, 23, 42, .12);
-            display: grid;
-            padding-left: 10px;
-            gap: 6px;
-            
-            background-color: #87cade;
-  font-family: monospace;
-  border: 3px solid black;
-  box-shadow: 2px 2px black;
-  font-weight: bolder;
-  padding: 2px 5px;
-        }
+.chip {
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 23, 42, .12);
+    display: grid;
+    padding-left: 10px;
+    gap: 6px;
 
-        .chips {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            
-        }
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
 
-        .hero .right {
-            position: relative;
-            min-height: 280px;
-        }
+.chips {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 
-        .profile {
-            padding: 22px;
-            display: grid;
-            gap: 14px;
-        }
+}
 
-        .avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 18px;
-            background: conic-gradient(from 180deg at 50% 50%, #f59e0b, #ef4444, #8b5cf6, #3b82f6, #10b981, #f59e0b);
-        }
+.hero .right {
+    position: relative;
+    min-height: 280px;
+}
 
-        .name {
-            display: grid;
-            gap: 8px
-        }
+.profile {
+    padding: 22px;
+    display: grid;
+    gap: 14px;
+}
 
-        .name b {
-            font-size: 18px;
-        }
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    background: conic-gradient(from 180deg at 50% 50%, #f59e0b, #ef4444, #8b5cf6, #3b82f6, #10b981, #f59e0b);
+}
 
-        .name span {
-            font-size: 13px;
-            color: rgba(2, 6, 23, .36);
-        }
+.name {
+    display: grid;
+    gap: 8px;
+    
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+    text-align: center;
+}
 
-        .quick {
-            display: grid;
-            gap: 8px;
-            padding: 12px;
-            border-radius: 18px;
-            border: 1px solid rgba(15, 23, 42, .12);
-            background: rgba(255, 255, 255, .65);
-        }
+.name b {
+    font-size: 18px;
+}
 
-        .row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 12px;
-            font-size: 13px;
-        }
+.name span {
+    font-size: 13px;
+    color: rgba(2, 6, 23, .36);
+}
 
-        .row small {
-            color: rgba(2, 6, 23, .45);
-        }
+.quick {
+    display: grid;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid rgba(15, 23, 42, .12);
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
 
-        .row strong {
-            font-weight: 800;
-        }
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            
-        }
+.row small {
+    color: rgba(2, 6, 23, .45);
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
 
-        .proj {
-            padding: 16px;
-            display: grid;
-            gap: 10px;
-            min-height: 170px;
-        }
+.row strong {
+    font-weight: 800;
+}
 
-        .thum {
-            height: 86px;
-            border-radius: 16px;
-            background:
-                radial-gradient(600px 400px at 20% 20%, rgba(191, 122, 11, 0.25), transparent 60%),
-                radial-gradient(400px 300px at 80% 30%, rgba(30, 178, 211, 0.25), transparent 55%),
-                linear-gradient(180deg, #ffffff, #e0e7ff);
-            border: 1px solid rgba(15, 23, 42, .08);
-            position: relative;
-            overflow: hidden;
-        }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
 
-        .proj h3 {
-            margin: 0;
-            font-size: 18px;
-        }
+}
 
-        .proj p {
-            margin: 0;
-            font-size: 14px;
-            color: rgba(2, 6, 23, .6);
-        }
+.proj {
+    padding: 16px;
+    display: grid;
+    gap: 10px;
+    min-height: 170px;
+}
 
-        .meta {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
+.thum {
+    height: 86px;
+    border-radius: 16px;
+    background:
+        radial-gradient(600px 400px at 20% 20%, rgba(191, 122, 11, 0.25), transparent 60%),
+        radial-gradient(400px 300px at 80% 30%, rgba(30, 178, 211, 0.25), transparent 55%),
+        linear-gradient(180deg, #ffffff, #e0e7ff);
+    border: 1px solid rgba(15, 23, 42, .08);
+    position: relative;
+    overflow: hidden;
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
 
-        .tag {
-            background-color: #87cade;
-  font-family: monospace;
-  border: 3px solid black;
-  box-shadow: 2px 2px black;
-  font-weight: bolder;
-  padding: 2px 5px;
-        }
+.proj h3 {
+    margin: 0;
+    font-size: 18px;
+}
 
-        .section-title {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .two {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-        .item {
-            padding: 16px;
-            display: grid;
-            gap: 8px;
-        }
-        .item b {
-            font-size: 16px;
-        }
-        .item span {
-            font-size: 13px;
-            color: rgba(2, 6, 23, .45);
-        }
-        .item p {
-            margin: 0;
-            font-size: 14px;
-            color: rgba(2, 6, 23, .6);
-        }
-        .contact {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 22px;
-        }
-        .lefty {
-            display: grid;
-            gap: 8px;
-        }
+.proj p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(2, 6, 23, .6);
+}
 
-        .retro-tags {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+.meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .tag {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 13px;
-  padding: 6px 10px;
-  border: 3px solid #000;
-  background: #f4f1ea;
-  box-shadow: 3px 3px 0 #000;
-  cursor: default;
-  transition: transform 0.1s, box-shadow 0.1s;
+    background-color: #87cade;
+    font-family: monospace;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+    padding: 2px 5px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.item {
+    padding: 16px;
+    display: grid;
+    gap: 8px;
+}
+
+.item b {
+    font-size: 16px;
+}
+
+.item span {
+    font-size: 13px;
+    color: rgba(2, 6, 23, .45);
+}
+
+.item p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(2, 6, 23, .6);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+}
+
+.lefty {
+    display: grid;
+    gap: 8px;
+}
+
+.retro-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 3px solid rgba(15, 23, 42, .12);
+    box-shadow: 3px 3px 0 rgba(15, 23, 42, .12);
+}
+
+.tag {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    padding: 6px 10px;
+    border: 3px solid #000;
+    background: #21ac7d;
+    box-shadow: 3px 3px 0 #000;
+    cursor: default;
+    transition: transform 0.1s, box-shadow 0.1s;
+    color:#fff;
 }
 
 .tag:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0 #000;
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #000;
 }
-
-/* RENKLER */
-.tag.html { background: #f2994a; }
-.tag.css  { background: #2d9cdb; }
-.tag.js   { background: #f2c94c; }
-.tag.php  { background: #9b51e0; }
