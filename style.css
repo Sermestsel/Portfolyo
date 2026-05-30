@@ -231,11 +231,6 @@ nav a:hover {
   text-align: center;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
 h1 {
   font-family: 'Press Start 2P', monospace;
   font-size: 1.35rem;
