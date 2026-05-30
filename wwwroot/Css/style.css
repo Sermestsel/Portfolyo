@@ -152,6 +152,8 @@ nav a:hover {
   display: inline-block;
   transition: transform 0.08s, box-shadow 0.08s;
   white-space: nowrap;
+  
+  animation: pulse-btn 2s infinite;
 }
 
 .btn:hover {
@@ -167,12 +169,17 @@ nav a:hover {
 .btn.primary {
   background: var(--accent);
   border-color: #ff8fa3;
-  animation: pulse-btn 2s infinite;
+  animation: pulse-btn-pri 2s infinite;
+}
+
+@keyframes pulse-btn-pri {
+  0%, 100% { box-shadow: var(--pixel-shadow-accent); }
+  50% { box-shadow: 6px 6px 0 var(--accent); }
 }
 
 @keyframes pulse-btn {
-  0%, 100% { box-shadow: var(--pixel-shadow-accent); }
-  50% { box-shadow: 6px 6px 0 var(--accent); }
+  0%, 100% { box-shadow: var(--teal); }
+  50% { box-shadow: 6px 6px 0 var(--teal); }
 }
 
 /* ── CARDS ── */
@@ -284,6 +291,10 @@ h1 span {
 /* ── PROFILE CARD (right) ── */
 .hero .right {
   padding: 0;
+}
+.info{
+  font-size: 15px;
+  display: inline-block;
 }
 
 .hero .right > .profile {
